@@ -1,0 +1,29 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+
+brew "mas"
+brew 'zsh-autosuggestions'
+brew 'zsh-autocomplete'
+
+cask "visual-studio-code"
+cask "docker"
+cask "github"
+cask "google-chrome"
+cask "microsoft-edge"
+cask "zoom"
+cask "miro"
+cask "figma"
+cask "monitorcontrol"
+
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "WhatsApp", id: 310633997
+mas 'Affinity Photo 2', id: 1616822987
+mas "QR Capture", id: 1369524274
+mas "The Unarchiver", id: 425424353
+mas "Magnet", id: 441258766
+mas "CopyClip", id: 1443858830
+mas "GIPHY CAPTURE", id: 668208984
+

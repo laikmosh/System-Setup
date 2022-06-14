@@ -1,0 +1,18 @@
+{
+    /* Additional Emacs bindings */
+    "\033" = { /* ESC */
+        "\033" = "complete:";  /* ESC-ESC */
+        "n" = ("insertText:", "ñ");
+        "N" = ("insertText:", "Ñ");
+        "a" = ("insertText:", "á");
+        "A" = ("insertText:", "Á");
+        "e" = ("insertText:", "é");
+        "E" = ("insertText:", "É");
+        "i" = ("insertText:", "í");
+        "I" = ("insertText:", "Í");
+        "o" = ("insertText:", "ó");
+        "O" = ("insertText:", "Ó");
+        "u" = ("insertText:", "ú");
+        "U" = ("insertText:", "Ú");
+    };
+}
