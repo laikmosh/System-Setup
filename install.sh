@@ -9,17 +9,19 @@ if ! sudo -v;
 fi
 
 # Keep sudo credentials alive, so it doesnt keep asking for your password
-# while true; do    
-#     sudo -n true    
-#     sleep 60    
-#     kill -0 "$$" || exit
-# done 2>/dev/null &
+while true; do    
+    sudo -n true    
+    sleep 60    
+    kill -0 "$$" || exit
+done 2>/dev/null &
 
 # Setup a temporary folder to download the repository
 mkdir -p "$HOME/SystemSetupTmp"cd "$HOME/SystemSetupTmp" || exit
 
-# Download repository
-curl -L -o master.zip https://github.com/laikmosh/System-Setup/archive/refs/heads/main.zipunzip -o master.zipcd System-Setup-main || exit
+# Download and unzip repository, exit script if download failed
+curl -L -o master.zip https://github.com/laikmosh/System-Setup/archive/refs/heads/main.zip
+unzip -o master.zip
+cd System-Setup-main || exit
 
 # Install brew and brewfile
 sh brew/install.sh
